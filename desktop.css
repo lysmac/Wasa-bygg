@@ -1,0 +1,30 @@
+/* Några klasser som inte ska synas i desktop-versionen av hemsidan */
+
+.bildcirkelsag {
+  display: none;
+}
+
+.tjanstlista {
+  display: none;
+}
+
+/*  Annan storlek på cookie warning */
+.kaka {
+  width: 25rem;
+  position: fixed;
+  left: 30%;
+  top: calc(60% - 10rem);
+  animation-duration: 8s;
+  animation-name: cookiepop;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  background-color: #131a24;
+}

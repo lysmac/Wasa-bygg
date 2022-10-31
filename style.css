@@ -1,0 +1,179 @@
+/* Ger backgrundsbilden och gradient över den  */
+
+body {
+  background: url(img/gothia-towers1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.613),
+      rgba(0, 0, 0, 0.465)
+    ),
+    url("/img/gothia-towers1.jpg");
+}
+
+/* Fontstorlek som ändras för logotyp */
+
+.wasabygg {
+  font-family: "noto serif korean";
+  font-size: 2rem;
+  color: #ffffff;
+  padding-left: 1rem;
+}
+
+/* Några klasser som inte ska synas i mobil-versionen av hemsidan */
+.bildcirkelsag {
+  display: none;
+}
+
+.tjanstlista {
+  display: none;
+}
+
+/* Footern byter flex-direction för att innehållet ska synas ordentligt på mobil */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+  background-color: #131a24;
+}
+
+.osynlig {
+  opacity: 0.4;
+}
+
+.bild {
+  display: none;
+}
+
+.bildcirkelsag {
+  display: none;
+}
+
+.tjanstlista {
+  display: none;
+}
+
+/* Input type-styling och styling för kontakt-sidan */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input :hover[type="submit"] {
+  background-color: #292c2b;
+  color: white;
+  padding: 12px 20px;
+  border: solid;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style för container*/
+.container-kontakt {
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+}
+
+/* flexbox för 25%-box */
+.col-25 {
+  display: flexbox;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Flexbox för 75%- box */
+.col-75 {
+  display: flexbox;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.container-kontakt {
+  margin-top: 10px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+.container-kontakt {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+/* Animeringarna för cookie warning. Både fade in-fade out, samt snurrande kakor på knapparna */
+.kaka {
+  width: 100%;
+  position: fixed;
+  top: calc(60% - 10rem);
+  animation-duration: 8s;
+  animation-name: cookiepop;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+@keyframes cookiepop {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.snurr {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

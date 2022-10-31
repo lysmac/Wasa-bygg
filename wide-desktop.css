@@ -1,0 +1,67 @@
+/* Fontstorlek som ändras för logotyp */
+
+.wasabygg {
+  font-size: 5rem;
+  color: #ffffff;
+}
+/* En klass som inte ska synas i XL-desktop-versionen av hemsidan */
+
+.innehallscontainer {
+  display: flex;
+  width: 100%;
+}
+
+.innehallstext {
+  width: 70%;
+}
+
+.hogerinnehall {
+  width: 30%;
+}
+
+.tjanstcard {
+  display: none;
+}
+
+.bildcirkelsag {
+  display: block;
+}
+
+.tjanstlista {
+  display: block;
+}
+
+/* Containers som används för att sätta storlek på div:ar  */
+.innehallscontainer {
+  display: flex;
+  width: 100%;
+}
+
+.innehallstext {
+  width: 70%;
+}
+
+.hogerinnehall {
+  width: 30%;
+}
+
+/*  Annan storlek på cookie warning */
+.kaka {
+  width: 25rem;
+  position: fixed;
+  left: 30%;
+  top: calc(60% - 10rem);
+  animation-duration: 8s;
+  animation-name: cookiepop;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  background-color: #131a24;
+}
